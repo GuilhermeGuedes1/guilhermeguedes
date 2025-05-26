@@ -1,0 +1,22 @@
+
+nav { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: black;
+}
+.header h1 { 
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 28px;
+    color: #c7c7c7;
+    
+
+}
+
+ion-icon { 
+    color: #c7c7c7;
+    font-size: 34px;
+    cursor: pointer;
+
+}

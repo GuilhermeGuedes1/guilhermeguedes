@@ -1,0 +1,31 @@
+.short-about { 
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background-color: #0a0a0a;
+    border-bottom: 1px solid white;
+    padding: 10px;
+}
+
+.short-about p { 
+    font-size: 18px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+.short-about a { 
+    text-decoration: underline;
+    color: #D3E97A;
+    font-size: 14px;
+    font-weight: 200;
+    padding: 20px 0px;
+    cursor: pointer;
+}
+
+.short-about img { 
+    width: 360px;
+    height: 380px;
+    object-fit: cover;
+    margin-top: 30px;
+}

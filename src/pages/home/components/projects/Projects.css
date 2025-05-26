@@ -1,0 +1,97 @@
+.projects { 
+    display: flex; 
+    flex-direction: column;
+    padding: 14px;
+    background-color: #0a0a0a;
+    
+}
+
+.projects h2 { 
+    font-size: 43px;
+    font-family: 'Bebas Neue', sans-serif;
+    padding-top: 30px;
+    color: white;
+}
+
+.projects p { 
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    color: #FAF9F6;
+    font-weight: lighter;
+
+}
+
+.projects .card-container { 
+    margin-top: 50px;
+}
+
+.projects .card { 
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.card-container img { 
+    background-color: #484848;
+    padding: 10px;
+}
+
+.projects h3 { 
+    font-family: "Manrope", sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    padding-top:30px;
+
+}
+
+.project-info { 
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+
+.tittle-project-info { 
+    font-family: "Manrope";
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+
+.year-container{ 
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px 0px;
+}
+
+.role-container { 
+    display: flex;
+    justify-content:space-between;
+    border-bottom: 1px solid white;
+    padding: 10px 0px;
+}
+
+.project-links { 
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+    font-family: "Manrope";
+    text-decoration: underline;
+    font-size: 14px;
+    color: #D3E97A;
+    
+}
+
+.project-links ion-icon { 
+    font-size: 14px;
+    color: #D3E97A;
+}

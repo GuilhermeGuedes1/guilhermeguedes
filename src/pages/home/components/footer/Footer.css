@@ -4,7 +4,7 @@
     align-items: center;
     background-color: #0a0a0a;
     padding: 12px;
-    border: 1px solid black;
+  
 }
 
 .footer span { 
@@ -12,4 +12,10 @@
     font-family: "Manrope", sans-serif;
     font-weight: 100;
     font-family: 16px;
+}
+
+@media(min-width:768px){
+    .footer {
+       justify-content: center;
+    }
 }

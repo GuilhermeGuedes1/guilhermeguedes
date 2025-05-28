@@ -1,9 +1,13 @@
 .projects { 
+    background-color: #0a0a0a;
+}
+
+.projects-content { 
     display: flex; 
     flex-direction: column;
-    padding: 14px;
+    padding: 12px;
     background-color: #0a0a0a;
-    
+
 }
 
 .projects h2 { 
@@ -22,11 +26,11 @@
 }
 
 .projects .card-container { 
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .projects .card { 
-    margin-top: 40px;
+    margin-top: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,4 +98,63 @@
 .project-links ion-icon { 
     font-size: 14px;
     color: #D3E97A;
+}
+
+
+@media(min-width:768px){
+    .projects-content { 
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .card { 
+
+        align-items: center;
+        
+    }
+}
+
+
+@media(min-width:1024px){
+
+
+    .projects {
+        width: 100%;
+    }
+
+
+    .tittle-container{
+        width: 100%;
+        text-align: left;
+        width: 100%;
+    }
+        
+    .projects-content { 
+        text-align: left;
+        width: 100%;
+    }
+    .projects .card { 
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        
+        
+
+        width: 100vw;
+    }
+
+    .project-info { 
+        width: 500px;
+        padding: 20px;
+      
+    }
+
+    .projects img { 
+        width: 450px;
+        height: 450px;
+    }
 }

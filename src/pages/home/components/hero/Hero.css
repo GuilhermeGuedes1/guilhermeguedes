@@ -1,12 +1,18 @@
-.hero { 
+.hero {
+     background-color: black;
+}
+
+.hero-content{ 
     color: white;
     background-color: black;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 12px;
     gap: 20px;
     height: 100vh;
     width: 100%;
+
 }
 
 .introduce-container { 
@@ -18,7 +24,6 @@
     font-family: 'Bebas Neue', sans-serif;
     font-size: 50px;
     color: #ffffff;
-   
 }
 
 .hero p { 
@@ -76,6 +81,44 @@ img {
     border-radius: 8px;
 }
 
+@media(min-width:768px) {
 
+    .hero-content {
+      width: 80%;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .contact-container { 
+        justify-content: center;
+    }
+
+    .hero img { 
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media(min-width:1024px){
+    .hero-content { 
+        height: 100vh;
+        width: 90%;
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-evenly;
+    }
+
+    .hero img { 
+        width: 400px;
+        height: 400px;
+
+    }
+    
+    .contact-container { 
+        justify-content: flex-start;
+    }
+}
 
 

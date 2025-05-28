@@ -1,8 +1,11 @@
 .contact { 
+    background-color: #0a0a0a;
+}
+
+.contact-content { 
     display: flex;
     flex-direction: column;
     gap: 10px;
-    height: 100vh;
     background-color: #0a0a0a;
     padding: 12px;
     border: 1px solid transparent;
@@ -60,7 +63,8 @@
     font-family: "Manrope", sans-serif;
     background-color: #1a1a1a;
     color: white;
-    border: none;
+    border-radius: 8px;
+    border: 1px solid transparent;
 
 }
 
@@ -101,4 +105,12 @@ textarea:focus {
 
 .button:hover { 
     filter: brightness(1.1);
+}
+
+@media(min-width:768px){
+    .contact-content { 
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+    }
 }

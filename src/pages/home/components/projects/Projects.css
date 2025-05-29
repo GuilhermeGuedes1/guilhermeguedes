@@ -1,5 +1,6 @@
 .projects { 
     background-color: #0a0a0a;
+    
 }
 
 .projects-content { 
@@ -66,7 +67,6 @@
     margin-top: 20px;
 }
 
-
 .year-container{ 
     display: flex;
     justify-content: space-between;
@@ -82,7 +82,7 @@
     padding: 10px 0px;
 }
 
-.project-links { 
+.projects a { 
     display: flex;
     gap: 20px;
     align-items: center;
@@ -92,8 +92,8 @@
     text-decoration: underline;
     font-size: 14px;
     color: #D3E97A;
-    
 }
+
 
 .project-links ion-icon { 
     font-size: 14px;
@@ -112,19 +112,12 @@
     }
 
     .card { 
-
         align-items: center;
-        
     }
 }
 
 
 @media(min-width:1024px){
-
-
-    .projects {
-        width: 100%;
-    }
 
 
     .tittle-container{
@@ -141,10 +134,7 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
-        
-        
-
-        width: 100vw;
+        width: 100%;
     }
 
     .project-info { 

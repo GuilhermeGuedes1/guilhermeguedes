@@ -9,7 +9,12 @@
 
 .short-about { 
  background-color: #0a0a0a;   
- height: 100vh;
+ height: 80vh;
+}
+
+.short-about h2{
+    color: white;
+    padding: 15px 0px;
 }
 
 .short-about p { 

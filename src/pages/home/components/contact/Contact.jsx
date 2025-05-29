@@ -5,8 +5,8 @@ export default function Contact(){
         <section className="contact">
             <div className="contact-content">
                 <h2>Vamos conectar!</h2>
-                <h3>De um Alo em gguedesprofissional@gmail.com</h3>
-                <p>Para mais informações, aqui esta meu <span className="resue">resumo</span></p>
+                <h3>De um Alô em gguedesprofissional@gmail.com</h3>
+                <p>Para mais informações, aqui esta meu <span className="resume"><a href="">resumo</a>.</span></p>
                 <div className="links">
                     <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
                     <a href=""><ion-icon name="logo-github"></ion-icon></a>

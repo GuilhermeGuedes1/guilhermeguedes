@@ -1,10 +1,11 @@
 
 nav { 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 12px;
     background-color: black;
+    height: 100px;
     
 }
 
@@ -12,20 +13,30 @@ nav {
     font-family: "Bebas Neue", sans-serif;
     font-size: 28px;
     color: #c7c7c7;
-    
-
+    cursor: pointer;
+    transition: all 0.2s linear;
 }
 
 ion-icon { 
-    color: #c7c7c7;
-    font-size: 34px;
-    cursor: pointer;   
+    color: white;
+    font-size: 2.5rem;
+}
 
+.header h1:hover { 
+    color: #D3E97A;
 }
 
 .nav-links { 
         display: none;
-    }
+}
+
+.nav-links a { 
+    transition: all 0.2s linear;
+}
+
+.nav-links a:hover { 
+    color: #D3E97A;
+}
 
 @media(min-width:1024px){
 

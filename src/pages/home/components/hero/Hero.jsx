@@ -3,7 +3,7 @@ import './Hero.css'
 export default function Hero(){
     return(
         <section className="hero">
-            <hero className="hero-content">
+            <div className="hero-content">
                 <div className="introduce-container">
                     <h2>Olá, eu sou <br /> Guilherme Guedes.</h2>
                     <p>Um desenvolvedor Web que mora no Rio de janeiro apaixonado por criar sites acessíveis e fáceis de usar.</p>
@@ -19,7 +19,7 @@ export default function Hero(){
                 <div className="photo-container">
                     <img src="./src/pages/home/components/hero/img/FotoPerfil.jpg" alt="foto-perfil" />
                 </div>
-            </hero>
+            </div>
             
         </section>
     )

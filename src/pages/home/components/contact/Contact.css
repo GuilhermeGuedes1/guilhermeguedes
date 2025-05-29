@@ -1,5 +1,6 @@
 .contact { 
     background-color: #0a0a0a;
+    width: 100%;
 }
 
 .contact-content { 
@@ -87,6 +88,7 @@ textarea:focus {
     outline: none;
 }
 
+
 .contact .button { 
     display: flex;
     justify-content: center;
@@ -101,6 +103,10 @@ textarea:focus {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.resume a { 
+    color:white;
 }
 
 .button:hover { 

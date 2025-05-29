@@ -4,7 +4,8 @@ import Hero from './pages/home/components/hero/Hero'
 import Projects from './pages/home/components/projects/Projects'
 import ShortAbout from './pages/home/components/shortAbout/ShortAbout'
 import Contact from './pages/home/components/contact/Contact'
-import { Footer } from './pages/home/components/footer/Footer'
+import  Footer  from './pages/home/components/footer/Footer'
+import Aside from './pages/home/components/aside/Aside'
 
 
 function App() {

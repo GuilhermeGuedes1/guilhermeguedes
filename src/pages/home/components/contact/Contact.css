@@ -106,9 +106,6 @@ textarea:focus {
     cursor: pointer;
 }
 
-.resume a { 
-    color:white;
-}
 
 .button:hover { 
     filter: brightness(1.1);

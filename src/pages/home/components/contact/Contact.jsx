@@ -5,13 +5,12 @@ export default function Contact(){
         <section className="contact" id='contact'>
             <div className="contact-content">
                 <h2>Vamos conectar!</h2>
-                <h3>De um Alô em gguedesprofissional@gmail.com</h3>
-                <p>Para mais informações, aqui esta meu <span className="resume"><a href="">resumo</a>.</span></p>
+                <h3>De um Alô em <strong>gguedesprofissional@gmail.com</strong></h3>
                 <div className="links">
-                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a href=""><ion-icon name="logo-github"></ion-icon></a>
-                    <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
-                    <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/guilherme-guedes-b109041a1/" target='_blank'><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://github.com/GuilhermeGuedes1" target='_blank'><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="https://www.instagram.com/djchrisroc/" target='_blank'><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://x.com/Chrisroc___" target='_blank'><ion-icon name="logo-twitter"></ion-icon></a>
                 </div>
                 <form>
                     <label htmlFor="name">Nome</label>

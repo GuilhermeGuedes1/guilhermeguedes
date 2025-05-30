@@ -13,8 +13,8 @@ export default function Hero(){
                             <div className="button">CONTATO</div>
                           <i className="fa-solid fa-arrow-right"></i>
                         </div>
-                        <i className="fa-brands fa-linkedin-in"></i>
-                        <i className="fa-brands fa-github"></i>
+                        <a href="https://www.linkedin.com/in/guilherme-guedes-b109041a1/" target='_blank'><i className="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/GuilhermeGuedes1" target='_blank'><i className="fa-brands fa-github"></i></a>
                     </div>
                 </div>
                 <div className="photo-container">

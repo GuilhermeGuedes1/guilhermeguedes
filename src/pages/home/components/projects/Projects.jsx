@@ -19,7 +19,6 @@ export default function Projects(){
     ]
 
     function ProjectModel({name, description, year, tech, role, image, link}){
-
         return(
             <div className="card">
                         <img src={image} alt={name}/>
@@ -27,7 +26,7 @@ export default function Projects(){
                             <h3 className='tittle'>{name}</h3>
                             <p className='description'>{description}</p>
                             <h4 className="tittle-project-info">Project Info</h4>
-                            <div className="year-container">
+                            <div className="role-container">
                                 <div className="year">Year</div>
                                 <div className="year-date">{year}</div>
                             </div>
@@ -49,7 +48,7 @@ export default function Projects(){
     }
 
     return(
-        <section className="projects">
+        <section className="projects" id='projects'>
             <div className="projects-content">
                 <div className="tittle-container">
                     <h2>Projetos em destaque</h2>

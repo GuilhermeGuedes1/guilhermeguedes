@@ -2,7 +2,7 @@ import './Contact.css'
 
 export default function Contact(){
     return(
-        <section className="contact">
+        <section className="contact" id='contact'>
             <div className="contact-content">
                 <h2>Vamos conectar!</h2>
                 <h3>De um Alô em gguedesprofissional@gmail.com</h3>

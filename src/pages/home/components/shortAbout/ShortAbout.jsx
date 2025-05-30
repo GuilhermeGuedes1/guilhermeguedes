@@ -1,4 +1,5 @@
 import './ShortAbout.css'
+import PhotoSmile from './img/perfil2.jpg'
 
 export default function ShortAbout(){
     return(
@@ -18,7 +19,7 @@ export default function ShortAbout(){
                     Além do desenvolvimento web, também faço lives jogando Counter-Strike e sigo dedicado à música, sempre buscando criar experiências únicas nos meus sets. Sou curioso, apaixonado por tecnologia e música, e estou sempre em busca de novas formas de transformar ideias em projetos criativos e impactantes.
                     </span>
                     <a href="#">SAIBA MAIS</a>
-                    <img src="./src/pages/home/components/shortAbout/img/perfil2.jpg" alt="perfil-photo" />
+                    <img src={PhotoSmile} alt="photo-smile" />
                 </div>
 
             </div>

@@ -17,9 +17,9 @@ export default function Header() {
         <ion-icon name="menu-outline" onClick={handleToggle}></ion-icon>
 
         <div className="nav-links">
-          <a href="#">Trabalhos</a>
+          <a href="#projects">Projetos</a>
           <a href="#">Sobre</a>
-          <a href="#">Contato</a>
+          <a href="#contact">Contato</a>
         </div>
       </nav>
 

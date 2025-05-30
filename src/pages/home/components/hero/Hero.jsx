@@ -1,4 +1,5 @@
 import './Hero.css'
+import FotoPerfil from './img/FotoPerfil.jpg'
 
 export default function Hero(){
     return(
@@ -17,7 +18,7 @@ export default function Hero(){
                     </div>
                 </div>
                 <div className="photo-container">
-                    <img src="./src/pages/home/components/hero/img/FotoPerfil.jpg" alt="foto-perfil" />
+                    <img src={FotoPerfil} alt="foto-perfil" />
                 </div>
             </div>
             

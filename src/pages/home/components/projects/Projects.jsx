@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import './Projects.css'
 
+
+import WeatherForecastImg from './img/weather-forecast.png'
+
 export default function Projects(){
 
     const projects = [
@@ -10,7 +13,7 @@ export default function Projects(){
             year: '2025',
             tech: 'Javascript',
             role : 'Front-end Developer',
-            image: './src/pages/home/components/projects/img/weather-forecast.png',
+            image: WeatherForecastImg,
             link: "https://guilhermeguedes1.github.io/weather-forecast/",
         }
     ]
@@ -53,10 +56,20 @@ export default function Projects(){
                     <p>Aqui estão alguns dos projetos selecionados que demostram minha paixão pelo desenvolvimento.</p>
                 </div>
                 <div className="card-container">
-                    {projects.map((project, index) => (<ProjectModel key={index} name={project.name} description={project.description} image={project.image} year={project.year} tech={project.tech} role={project.role} link={project.link} />))}
+                    {projects.map((project, index) => (
+                        <ProjectModel
+                            key={index}
+                            name={project.name}
+                            description={project.description}
+                            image={project.image}
+                            year={project.year}
+                            tech={project.tech}
+                            role={project.role}
+                            link={project.link}
+                        />
+                    ))}
                 </div>
             </div>
         </section>
-
     )
 }

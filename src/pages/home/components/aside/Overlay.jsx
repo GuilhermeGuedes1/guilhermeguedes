@@ -1,4 +1,4 @@
-import './aside.css'; 
+import './Aside.css'; 
 
 export default function Overlay({ showOverlay, onClick }) {
   return (

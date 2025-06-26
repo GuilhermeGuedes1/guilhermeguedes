@@ -118,3 +118,9 @@ textarea:focus {
         justify-content: center;
     }
 }
+
+@media(min-width:1280px){
+    .contact-content { 
+        width: 1024px;
+    }
+}

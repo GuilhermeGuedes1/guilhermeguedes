@@ -106,6 +106,7 @@
         justify-content: space-around;
         gap: 20px;
         width: 505px;
+
     }
 
     .about-description .description { 
@@ -125,3 +126,18 @@
     }
 
 }
+
+@media(min-width:1024px){
+
+    .short-content { 
+        width: 70%;
+        
+    }
+}
+
+@media(min-width:1280px){
+    .short-content { 
+        width: 1024px;
+    }
+}
+

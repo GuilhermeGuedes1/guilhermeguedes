@@ -7,7 +7,7 @@
     display: flex; 
     flex-direction: column;
     padding: 12px;
-    background-color: #0a0a0a;
+    background-color: black;
 
 }
 
@@ -28,6 +28,7 @@
 
 .projects .card-container { 
     margin-top: 30px;
+    margin: auto;
 }
 
 .projects .card { 
@@ -46,8 +47,9 @@
 .projects h3 { 
     font-family: "Manrope", sans-serif;
     font-size: 24px;
-    color: #ffffff;
+    color: #D3E97A;
     padding-top:30px;
+    text-decoration: underline;
 
 }
 
@@ -58,6 +60,7 @@
     width: 100%;
     gap: 20px;
     padding: 0px 10px;
+    
 }
 
 
@@ -154,3 +157,13 @@
         height: 450px;
     }
 }
+
+
+@media(min-width:1280px){
+
+    .projects-content { 
+    width: 1024px;
+    margin: auto;
+  }
+}
+

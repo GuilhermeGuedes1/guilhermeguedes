@@ -137,3 +137,11 @@ img {
 }
 
 
+@media(min-width:1280px){
+    .hero-content { 
+        width: 1024px;
+        margin: auto;
+        
+    }
+}
+

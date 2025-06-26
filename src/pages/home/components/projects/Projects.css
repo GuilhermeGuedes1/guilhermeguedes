@@ -31,11 +31,10 @@
 }
 
 .projects .card { 
-    margin-top: 0px;
+    margin: 20px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 
@@ -100,6 +99,11 @@
 .project-links ion-icon { 
     font-size: 14px;
     color: #D3E97A;
+}
+
+.project-links .links { 
+    gap: 10px;
+
 }
 
 

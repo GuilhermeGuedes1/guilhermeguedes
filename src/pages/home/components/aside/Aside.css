@@ -1,18 +1,19 @@
 aside {
     background-color: black;
     position: fixed;
-    right: -135px;
     top: 0;
+    right: 0;
     height: 100%;
     padding: 20px;
     display: flex;
     flex-direction: column;
+    transform: translateX(100%);
     transition: all 0.5s ease-in;
     z-index: 9999;
 }
 
 aside.show {
-    right: 0;
+    transform: translateX(0);
 }
 
 aside a {

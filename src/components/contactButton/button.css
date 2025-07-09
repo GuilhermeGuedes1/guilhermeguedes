@@ -1,0 +1,34 @@
+
+.contact-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    width: 163px;
+    height: 48px;
+    border-radius: 18px;
+    background-color:#D3E97A;
+    color: #222222;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Manrope", sans-serif;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.contact-button:hover { 
+    filter: brightness(1.1);
+}
+
+i { 
+    position: absolute;
+    right: 5px;
+    color: #d3e97a;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #222222;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+}

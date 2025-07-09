@@ -15,16 +15,15 @@ export default function Header() {
 	return (
 		<section className="header">
 			<nav>
-				<h1>Guilherme Guedes</h1>
+				<Link to={'/'}>
+					<h1>Guilherme Guedes</h1>
+				</Link>
 				<ion-icon
 					name="menu-outline"
 					onClick={handleToggle}></ion-icon>
 
 				<div className="nav-links">
-					<a href="#projects">Projetos</a>
-
 					<Link to="/about">Sobre</Link>
-					<a href="#contact">Contato</a>
 				</div>
 			</nav>
 

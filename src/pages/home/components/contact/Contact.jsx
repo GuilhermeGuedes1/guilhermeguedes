@@ -35,7 +35,7 @@ export default function Contact() {
 					<Instagram />
 					<Twitter />
 				</div>
-				<form>
+				<form autoComplete="on">
 					<label htmlFor="name">Nome</label>
 					<input
 						type="text"

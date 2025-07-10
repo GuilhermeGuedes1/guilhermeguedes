@@ -1,0 +1,20 @@
+.capabilities { 
+    background-color: black;
+    padding: 12px;
+}
+
+ul { 
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    margin: 10px 0px;
+}
+
+li { 
+    font-size: 1rem;
+    padding: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.411);
+    border-radius: 28px;
+}

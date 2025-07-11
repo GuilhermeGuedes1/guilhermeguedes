@@ -1,23 +1,40 @@
 import './Contact.css';
 import { useState } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 
 import SubmitButton from '../../../../components/buttonSubmit/SubmitButton';
-import LinkedinIcon from '../../../../components/SocialIcons/LinkedinIcon';
-import Github from '../../../../components/SocialIcons/Github';
+import LinkedinIcon from '../../../../components/socialIcons/LinkedinIcon';
+import GithubIcon from '../../../../components/socialIcons/Github';
 import Instagram from '../../../../components/SocialIcons/Instagram';
 import Twitter from '../../../../components/SocialIcons/Twitter';
 
-import { Form } from 'react-router-dom';
-
 export default function Contact() {
-	const [name, setName] = useState('');
+	const [formState, setFormState] = useState({
+		name: '',
+		email: '',
+		subject: '',
+		message: '',
+	});
 
-	function handleName(e) {
-		setName(e.target.value);
-		console.log(e.target.value);
+	const [state, handleSubmit] = useForm('mdkzqdeo');
+
+	function handleForm(e) {
+		setFormState({
+			...formState,
+			[e.target.name]: e.target.value,
+		});
 	}
-	function handleSubmit() {
-		console.log('ok');
+
+	if (state.succeeded) {
+		return (
+			<section
+				className="contact"
+				id="contact">
+				<div className="contact-content">
+					<h2>Mensagem enviada com sucesso!</h2>
+				</div>
+			</section>
+		);
 	}
 
 	return (
@@ -27,31 +44,70 @@ export default function Contact() {
 			<div className="contact-content">
 				<h2>Vamos conectar!</h2>
 				<h3>
-					De um Alô em <strong>gguedesprofissional@gmail.com</strong>
+					Dê um alô em <strong>gguedesprofissional@gmail.com</strong>
 				</h3>
 				<div className="links">
 					<LinkedinIcon />
-					<Github />
+					<GithubIcon />
 					<Instagram />
 					<Twitter />
 				</div>
-				<form autoComplete="on">
+
+				<form onSubmit={handleSubmit}>
 					<label htmlFor="name">Nome</label>
 					<input
 						type="text"
 						id="name"
-						value={name}
-						onChange={(e) => handleName(e)}
+						name="name"
+						onChange={handleForm}
+						value={formState.name}
+						required
 					/>
+
 					<label htmlFor="email">Email</label>
-					<input type="email" />
+					<input
+						type="email"
+						id="email"
+						name="email"
+						onChange={handleForm}
+						value={formState.email}
+						required
+					/>
+					<ValidationError
+						prefix="Email"
+						field="email"
+						errors={state.errors}
+					/>
+
 					<label htmlFor="subject">Assunto</label>
-					<input type="text" />
+					<input
+						type="text"
+						id="subject"
+						name="subject"
+						onChange={handleForm}
+						value={formState.subject}
+						required
+					/>
+
 					<label htmlFor="message">Mensagem</label>
 					<textarea
-						name="Text-area"
-						id="message"></textarea>
-					<SubmitButton children={'Enviar'} />
+						id="message"
+						name="message"
+						onChange={handleForm}
+						value={formState.message}
+						required
+					/>
+					<ValidationError
+						prefix="Mensagem"
+						field="message"
+						errors={state.errors}
+					/>
+
+					<SubmitButton
+						type="submit"
+						disabled={state.submitting}>
+						Enviar
+					</SubmitButton>
 				</form>
 			</div>
 		</section>

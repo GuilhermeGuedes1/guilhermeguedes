@@ -51,7 +51,7 @@ ion-icon {
         font-family: "Manrope", sans-serif;
         width: 20%;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
 
     .nav-links a { 

@@ -5,9 +5,12 @@ export default function Capabilities() {
 		<section className="capabilities">
 			<h2>Minhas habilidades</h2>
 			<p>
-				I am always looking to add more skills.Morbi egestas neque eu blandit
-				fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at purus
-				faucibus tristique ut et dolor.
+				"Estou sempre buscando adicionar mais habilidades. Acredito que o
+				aprendizado contínuo é essencial para o crescimento profissional.
+				Atualmente, estou me aprofundando em Tailwind, TypeScript e Node.js —
+				tecnologias que considero fundamentais para evoluir como desenvolvedor.
+				Gosto de enfrentar novos desafios e aprimorar meus conhecimentos sempre
+				que possível."
 			</p>
 			<div className="skills-list">
 				<ul>

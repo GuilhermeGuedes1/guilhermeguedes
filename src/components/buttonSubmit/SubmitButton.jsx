@@ -1,13 +1,13 @@
 import React from 'react';
 import './submit.css';
 
-function SubmitButton({ children, type = 'button' }) {
+function SubmitButton({ children, type = 'submit' }) {
 	return (
-		<div
+		<button
 			className="submit-button"
 			type={type}>
 			{children}
-		</div>
+		</button>
 	);
 }
 

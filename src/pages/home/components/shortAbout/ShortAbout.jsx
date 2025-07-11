@@ -1,6 +1,8 @@
 import './ShortAbout.css';
 import PhotoSmile from './img/perfil2.jpg';
 
+import { Link } from 'react-router-dom';
+
 export default function ShortAbout() {
 	return (
 		<section className="short-about">
@@ -31,7 +33,9 @@ export default function ShortAbout() {
 						tecnologia e música, e estou sempre em busca de novas formas de
 						transformar ideias em projetos criativos e impactantes.
 					</span>
-					<a href="#">SAIBA MAIS</a>
+					<Link to={'/about'}>
+						<a href="">SAIBA MAIS</a>
+					</Link>
 					<img
 						src={PhotoSmile}
 						alt="photo-smile"

@@ -18,3 +18,37 @@ li {
     border: 1px solid rgba(255, 255, 255, 0.411);
     border-radius: 28px;
 }
+
+@media(min-width:768px) { 
+    .capabilities{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+
+    ul { 
+        justify-content: center;
+        
+    }
+}
+
+
+@media(min-width:1280px){
+    .capabilities { 
+        width: 1024px;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+
+    .skills-description { 
+        width: 550px;
+        text-align: start;
+    }
+
+
+    ul { 
+        justify-content: flex-start;
+    }
+
+}

@@ -1,5 +1,5 @@
 import './Hero.css';
-import FotoPerfil from './img/FotoPerfil.jpg';
+import FotoPerfil from '../../../../assets/FotoPerfil.jpg';
 import ContactButton from '../../../../components/contactButton/ContactButton';
 import LinkedinIcon from '../../../../components/socialIcons/LinkedinIcon';
 import GithubIcon from '../../../../components/socialIcons/Github';
@@ -16,7 +16,7 @@ export default function Hero() {
 						Um desenvolvedor Web que mora no Rio de janeiro apaixonado por criar
 						sites acessíveis e fáceis de usar.
 					</p>
-					<div className="contact-container">
+					<div className="contact-hero">
 						<ContactButton
 							children={'Contato'}
 							icon={<i className="fa-solid fa-arrow-right"></i>}

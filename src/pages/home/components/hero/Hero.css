@@ -1,5 +1,6 @@
 .hero {
      background-color: black;
+    
 }
 
 .hero-content{ 
@@ -10,14 +11,12 @@
     justify-content: center;
     padding: 12px;
     gap: 20px;
-    height: 100vh;
     width: 100%;
 
 }
 
 .introduce-container { 
     margin: 20px 0px;
-  
 }
 
 .hero h2 { 
@@ -32,7 +31,7 @@
     padding: 14px 0px;
 }
 
-.contact-container { 
+.contact-hero { 
     margin: 14px 0px;
     display: flex;
     align-items: center;
@@ -59,7 +58,7 @@
     filter: brightness(1.1);
 }
 
-.contact-container > .button-container > i { 
+.contact-hero > .button-container > i { 
     font-size: 20px;
     color: white;
     background-color: #222222;
@@ -89,8 +88,8 @@ i:hover {
 }
 
 img { 
-    max-width: 360px;
-    max-height: 400px;
+    width: 360px;
+    height: 400px;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -105,7 +104,7 @@ img {
       text-align: center;
     }
     
-    .contact-container { 
+    .contact-hero { 
         justify-content: center;
     }
 
@@ -118,20 +117,33 @@ img {
 @media(min-width:1024px){
     .hero-content { 
         display: flex;
-        width: 90%;
-        flex-direction: row;
+        flex-direction:row;
         text-align: left;
         justify-content: space-evenly;
+        align-items: center;
+        width: 900px
+
         
     }
 
+    .hero-content ion-icon { 
+        display: block;
+    }
+
     .hero img { 
-        width: 400px;
-        height: 400px;
+        max-width: 400px;
+        min-height: 400px;
 
     }
     
-    .contact-container { 
+    .contact-hero { 
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+    }
+
+    .contact-hero { 
         justify-content: flex-start;
     }
 }
@@ -140,8 +152,20 @@ img {
 @media(min-width:1280px){
     .hero-content { 
         width: 1024px;
+
         margin: auto;
-        
     }
+
+    .contact-hero { 
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+
+    }
+    .hero { 
+        margin: auto;
+    }
+    
 }
 

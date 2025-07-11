@@ -26,7 +26,7 @@ p {
 
 .about img { 
     margin: 12px 0px;
-    width: 100%;
+    
 }
 
 .about-links { 
@@ -34,3 +34,52 @@ p {
     align-items: center;
     gap: 10px;
 }
+
+@media(min-width:768px) { 
+    .about { 
+       width: 80%;
+       margin: auto;
+       text-align: center;
+
+    }
+    
+    .about-links { 
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+
+@media(min-width:1280px) { 
+    .about { 
+       width: 1024px;
+    }
+    
+    .about-container { 
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
+        width: 1024px;
+      
+    }
+
+    .description { 
+        width: 550px;
+        text-align: start;
+    }
+
+    .about img { 
+        width: 1024px;
+        height: 600px;
+    }
+
+    .about-links ion-icon{
+        display: block; 
+
+    }
+    .about-links {
+         justify-content: flex-start;
+
+    }
+}
+

@@ -1,15 +1,14 @@
 import React from 'react';
 import './button.css';
 
-function Button({ children, onClick, type = 'button', className = '', icon }) {
+function Button({ children, className = '', icon }) {
 	return (
-		<button
-			type={type}
-			onClick={onClick}
-			className={`contact-button ${className}`}>
-			{children}
-			{icon}
-		</button>
+		<a href="#contact">
+			<button className={`contact-button ${className}`}>
+				{children}
+				{icon}
+			</button>
+		</a>
 	);
 }
 

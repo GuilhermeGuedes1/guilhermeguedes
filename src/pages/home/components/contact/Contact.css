@@ -91,14 +91,118 @@ textarea:focus {
 
 @media(min-width:768px){
     .contact-content { 
-        width: 90%;
+        width: 80%;
         margin: auto;
         justify-content: center;
+        text-align: center;
+        
     }
+    form { 
+        justify-content: center;
+        align-items: center;
+    }
+
+    input { 
+        width: 100%;
+    }
+    
+    textarea { 
+        width: 100%;
+    }
+
+    .links { 
+        margin: auto;
+    }
+}
+
+@media(min-width:1024px){
+    .hero { 
+        width: 1024px;
+    }
+
+    .contact-content { 
+        width: 1024px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        text-align: start;
+        justify-content: space-evenly;
+    }
+
+    .contact-container { 
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0px;
+    }
+
+    .contact-container .links { 
+        margin: 0px;
+        gap: 10px;
+
+    }
+
+    .form-container { 
+        width:550px;
+        align-items: flex-start;
+    }
+
+    .contact-container ion-icon { 
+        display: block;
+    }
+    .contact form { 
+        align-items: flex-start;
+        
+    }
+
+    .contact h2 { 
+        margin-top: 0px;
+    }
+
 }
 
 @media(min-width:1280px){
     .contact-content { 
         width: 1024px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: start;
+        
     }
+
+    .contact-container { 
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0px;
+    }
+
+    .contact-container .links { 
+        margin: 0px;
+        gap: 10px;
+
+    }
+
+    .form-container { 
+        width:550px;
+        align-items: flex-start;
+    }
+
+    .contact-container ion-icon { 
+        display: block;
+    }
+    .contact form { 
+        align-items: flex-start;
+        
+    }
+
+    .contact h2 { 
+        margin-top: 0px;
+    }
+
 }

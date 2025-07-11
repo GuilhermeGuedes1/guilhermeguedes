@@ -10,6 +10,7 @@
     justify-content: center;
 }
 
+
 .project-info { 
     color: #ffffff;
     display: flex;
@@ -62,4 +63,27 @@
 .project-links .links { 
     gap: 10px;
 
+}
+
+
+@media(min-width:1024px) { 
+
+    .projects .card { 
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+
+    
+}
+
+.card img { 
+    width: 400px;
+    height: 400px;
+}
+
+.project-info { 
+    width: 500px;
+}
 }

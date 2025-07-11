@@ -42,73 +42,73 @@ export default function Contact() {
 			className="contact"
 			id="contact">
 			<div className="contact-content">
-				<h2>Vamos conectar!</h2>
-				<h3>
-					Dê um alô em <strong>gguedesprofissional@gmail.com</strong>
-				</h3>
-				<div className="links">
-					<LinkedinIcon />
-					<GithubIcon />
-					<Instagram />
-					<Twitter />
+				<div className="contact-container">
+					<h2>Vamos conectar!</h2>
+					<h3>
+						Dê um alô em <strong>gguedesprofissional@gmail.com</strong>
+					</h3>
+					<div className="links">
+						<LinkedinIcon />
+						<GithubIcon />
+						<Instagram />
+						<Twitter />
+					</div>
 				</div>
 
-				<form onSubmit={handleSubmit}>
-					<label htmlFor="name">Nome</label>
-					<input
-						type="text"
-						id="name"
-						name="name"
-						onChange={handleForm}
-						value={formState.name}
-						required
-					/>
-
-					<label htmlFor="email">Email</label>
-					<input
-						type="email"
-						id="email"
-						name="email"
-						onChange={handleForm}
-						value={formState.email}
-						required
-					/>
-					<ValidationError
-						prefix="Email"
-						field="email"
-						errors={state.errors}
-					/>
-
-					<label htmlFor="subject">Assunto</label>
-					<input
-						type="text"
-						id="subject"
-						name="subject"
-						onChange={handleForm}
-						value={formState.subject}
-						required
-					/>
-
-					<label htmlFor="message">Mensagem</label>
-					<textarea
-						id="message"
-						name="message"
-						onChange={handleForm}
-						value={formState.message}
-						required
-					/>
-					<ValidationError
-						prefix="Mensagem"
-						field="message"
-						errors={state.errors}
-					/>
-
-					<SubmitButton
-						type="submit"
-						disabled={state.submitting}>
-						Enviar
-					</SubmitButton>
-				</form>
+				<div className="form-container">
+					<form onSubmit={handleSubmit}>
+						<label htmlFor="name">Nome</label>
+						<input
+							type="text"
+							id="name"
+							name="name"
+							onChange={handleForm}
+							value={formState.name}
+							required
+						/>
+						<label htmlFor="email">Email</label>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							onChange={handleForm}
+							value={formState.email}
+							required
+						/>
+						<ValidationError
+							prefix="Email"
+							field="email"
+							errors={state.errors}
+						/>
+						<label htmlFor="subject">Assunto</label>
+						<input
+							type="text"
+							id="subject"
+							name="subject"
+							onChange={handleForm}
+							value={formState.subject}
+							required
+						/>
+						<label htmlFor="message">Mensagem</label>
+						<textarea
+							id="message"
+							name="message"
+							onChange={handleForm}
+							value={formState.message}
+							required
+						/>
+						<ValidationError
+							prefix="Mensagem"
+							field="message"
+							errors={state.errors}
+						/>
+						<SubmitButton
+							type="submit"
+							disabled={state.submitting}>
+							Enviar
+						</SubmitButton>
+					</form>
+				</div>
 			</div>
 		</section>
 	);

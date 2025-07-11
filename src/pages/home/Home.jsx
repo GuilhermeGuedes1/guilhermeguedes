@@ -5,7 +5,7 @@ import ShortAbout from './components/shortAbout/ShortAbout';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 
-export function Home() {
+export default function Home() {
 	return (
 		<>
 			<Header />

@@ -3,7 +3,7 @@ import Header from '../home/components/header/Header';
 import Capabilities from './capabilities/Capabilities';
 import Contact from '../home/components/contact/Contact';
 
-export function AboutPage() {
+export default function AboutPage() {
 	return (
 		<>
 			<Header />

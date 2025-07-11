@@ -5,8 +5,8 @@ import { useForm, ValidationError } from '@formspree/react';
 import SubmitButton from '../../../../components/buttonSubmit/SubmitButton';
 import LinkedinIcon from '../../../../components/socialIcons/LinkedinIcon';
 import GithubIcon from '../../../../components/socialIcons/Github';
-import Instagram from '../../../../components/SocialIcons/Instagram';
-import Twitter from '../../../../components/SocialIcons/Twitter';
+import Instagram from '../../../../components/socialIcons/Instagram';
+import Twitter from '../../../../components/socialIcons/Twitter';
 
 export default function Contact() {
 	const [formState, setFormState] = useState({
